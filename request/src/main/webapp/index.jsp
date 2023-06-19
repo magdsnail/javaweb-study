@@ -15,8 +15,8 @@
 <div style="display: flex;align-content: center">
     <div>
         <form action="${pageContext.request.contextPath}/login" method="post">
-            用户名：<input type="text" name="username"/>
-            密码： <input type="password" name="password"/>
+            用户名：<input type="text" name="username" required/>
+            密码： <input type="password" name="password" required/>
             爱好：
             <input type="checkbox" name="hobbys" value="女孩"/>女孩
             <input type="checkbox" name="hobbys" value="代码"/>代码
