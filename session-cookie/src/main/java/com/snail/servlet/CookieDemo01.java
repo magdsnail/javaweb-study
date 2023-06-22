@@ -25,7 +25,6 @@ public class CookieDemo01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //服务器 告诉你 你来的时间 把这个时间封装成为一个新建 你下次来我就知道你来了
-
         //解决中文乱码
         req.setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
