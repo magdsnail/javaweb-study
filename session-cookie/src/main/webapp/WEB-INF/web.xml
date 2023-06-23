@@ -10,9 +10,24 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
     <servlet-name>CookieDemo01</servlet-name>
     <servlet-class>com.snail.servlet.CookieDemo01</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>CookieDemo01</servlet-name>
     <url-pattern>/c1</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SessionDemo1</servlet-name>
+    <servlet-class>com.snail.servlet.SessionDemo01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionDemo1</servlet-name>
+    <url-pattern>/s</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+<!--  以分钟为单位  -->
+    <session-timeout>1</session-timeout>
+  </session-config>
+  
+  
 </web-app>
