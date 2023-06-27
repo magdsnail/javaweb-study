@@ -28,9 +28,7 @@ public class SessionDemo01 extends HttpServlet {
 
         //给session中存东西
         session.setAttribute("name", new Person("秦疆", 18));
-
         String id = session.getId();
-
         boolean aNew = session.isNew();
         if (aNew) {
             resp.getWriter().write("session创建成功 id" + id);

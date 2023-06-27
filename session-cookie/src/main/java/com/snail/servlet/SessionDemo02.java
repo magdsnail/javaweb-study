@@ -31,6 +31,7 @@ public class SessionDemo02 extends HttpServlet {
         HttpSession session = req.getSession();
         Person person = (Person) session.getAttribute("name");
         System.out.println(person.toString());
+
     }
 
     @Override
