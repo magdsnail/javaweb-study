@@ -36,8 +36,6 @@ public class LoginServlet extends HttpServlet {
         //通过请求转发
         //这里的 / 代表当前的web应用
         req.getRequestDispatcher("/success.jsp").forward(req, resp);
-
-
     }
 
     @Override

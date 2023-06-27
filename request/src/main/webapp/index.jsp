@@ -4,6 +4,7 @@
   Date: 2023-05-27 027
   Time: 14:29
   To change this template use File | Settings | File Templates.
+  jsp 本质上就是servlet
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
