@@ -23,7 +23,5 @@
 
 <c:out value="${isAdmin}"/>
 
-<%=%>
-
 </body>
 </html>
