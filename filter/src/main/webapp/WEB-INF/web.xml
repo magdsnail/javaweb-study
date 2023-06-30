@@ -7,6 +7,24 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          metadata-complete="true">
 
     <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.kuang.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/servlet/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.kuang.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/servlet/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>showservlet</servlet-name>
         <servlet-class>com.kuang.servlet.ShowServlet</servlet-class>
     </servlet>
@@ -28,6 +46,15 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         <!--只要是/servlet的任何请求 会经过这个过滤器-->
         <url-pattern>/servlet/*</url-pattern>
 <!--        <url-pattern>/*</url-pattern>-->
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SysFilter</filter-name>
+        <filter-class>com.kuang.filter.SysFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SysFilter</filter-name>
+        <url-pattern>/sys/*</url-pattern>
     </filter-mapping>
 
 

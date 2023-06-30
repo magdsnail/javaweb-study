@@ -15,6 +15,7 @@ public class CharacterEncodingFilter implements Filter {
     @Override
     public void destroy() {
         Filter.super.destroy();
+
     }
 
     //chain 链
